@@ -11,11 +11,7 @@ if __name__ == "__main__":
         a.sort()
         b.sort()
 
-        for i in range(n):
-            if(a[i] != a[0] or b[i] != b[0]):
-                if(abs(a[i] - a[0]) > abs(b[i] - b[0])):
-                    count = count + abs(a[i] - a[0])
-                else:
-                    count = count + abs(b[i] - b[0])
-
+        for i in range(1,n):
+            count = count + max((a[i] - a[0]),(b[i] - b[0]))
+        
         print(count)
