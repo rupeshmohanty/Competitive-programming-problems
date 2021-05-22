@@ -1,18 +1,14 @@
 if __name__ == "__main__":
-    m = []
-    steps = 0
-    # getting a matrix input!
-    for i in range(5):
-        a = []
-        for j in range(5):
-            a.append(int(input()))
-        m.append(a)
-    
-    for i in range(5):
-        for j in range(5):
-            if(m[i][j] == 1):
-                i_position = i
-                j_position = j
+    cord = []
+    for i in range(1,6):
+        arr = list(map(int,input().split()))
+        ele = 1
 
-    steps = steps + abs(i_position - 2) + abs(j_position - 2)
-    print(steps)
+        for j in range(1,6):
+            if(arr[j-1] == ele):
+                cord.append(i)
+                cord.append(j)
+
+    print(abs(3-cord[0]) + abs(3-cord[1]))
+    
+

@@ -1,7 +1,7 @@
 def Convert(string):
     return list(string)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     n, t = map(int, input().split())
 
     input_order = input()
