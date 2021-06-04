@@ -1,21 +1,14 @@
 if __name__ == "__main__":
     n = int(input())
     arr = list(map(int,input().split()))
-    max = arr[0]
-    (res,i) = ([],0)
+    count = 0
+    max_count = 0
 
-    if(len(set(arr)) == 1):
-        count = 1
-    else:
-        while(i < n):
-            temp = []    
-            if(arr[i] > max):
-                max = arr[i]
-                temp.append(arr[i])
-                i += 1
-            else:
-                i += 1
-
-        res.append(temp)
-
-    print(len(res))
+    
+    for i in range(1,n):
+        if(arr[i] > arr[i-1]):
+            count += 1
+        else:
+            max_count = max(max_count, count)
+        
+    print(max_count)
