@@ -1,1 +1,0 @@
-{"group":"local","interactive":false,"local":true,"memoryLimit":1024,"name":"Local: bovineDilemma","srcPath":"g:\\Python Programming Problems\\Codeforces\\bovineDilemma.py","tests":[{"id":1624367060789,"input":"1\n4\n1 2 4 5","output":"4"}],"timeLimit":3000,"url":"g:\\Python Programming Problems\\Codeforces\\bovineDilemma.py"}
