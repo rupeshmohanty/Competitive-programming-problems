@@ -3,10 +3,7 @@ arr = list(map(int,input().split()))
 count = 0
 
 for i in range(n):
-    if(arr[i] <= k):
+    if 5 - arr[i] >= k:
         count += 1
 
-if count % 3 == 0:
-    print(int(count/3))
-else:
-    print(0)
+print(int(count/3))
