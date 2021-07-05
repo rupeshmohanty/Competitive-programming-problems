@@ -3,20 +3,21 @@ if __name__ == "__main__":
 
     for i in range(t):
         w,h,n = map(int,input().split())
-        count = 0
+        count = 1
         product = w*h
 
-        if(product % 2 == 0):
+        if product % 2 == 0:
             while(product % 2 == 0):
-                count = count + 2
                 product = int(product/2)
+                count *= 2
+            
+            if count >= n:
+                print("YES")
+            else:
+                print("NO")
         else:
-            count = 1
-
-        print(count)
-
-        if(count >= n):
-            print("YES")
-        else:
-            print("NO")
+            if n == 1:
+                print("YES")
+            else:
+                print("NO")
         
