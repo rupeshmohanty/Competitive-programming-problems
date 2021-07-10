@@ -1,5 +1,5 @@
 def minimizeHeight(arr,k,n):
-    
+
     for i in range(n):
         if arr[i] > k:
             arr[i] = arr[i] - k
