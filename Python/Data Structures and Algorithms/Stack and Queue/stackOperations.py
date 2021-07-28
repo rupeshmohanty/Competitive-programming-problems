@@ -1,6 +1,7 @@
 # Exercise link: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGx4V3BGaDZrUzhBYVdmaGxEa2FwbENhNEZGZ3xBQ3Jtc0tsMW83VEJTMUhndnk4RkpHWnk0X3VLZHlhR2hPWDEzazFKZHlCWV9yamFjeHd2NE5pTWVhNUEwRmFlV0lBZnZVOUpiZTd5Z01TemI1WXp3YVd1Nk5UU1hJQjZHY1Vmd2lJUlhhN0FWdDJsemhqdjBRQQ&q=https%3A%2F%2Fgithub.com%2Fcodebasics%2Fdata-structures-algorithms-python%2Ftree%2Fmaster%2Fdata_structures%2F5_Stack%2F5_stack_exercise.md
 from collections import deque
 
+# Problem 1!
 def reverse_string(s):
     t = ""
     for i in range(len(s)):
@@ -9,6 +10,7 @@ def reverse_string(s):
 
     print(t)
 
+# Problem 2!
 def is_balanced(s):
     count1,count2,count3 = 0,0,0
     for i in range(len(s)):
