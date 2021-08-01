@@ -36,8 +36,8 @@ class TreeNode:
                 # printing the subcategories for the specific branch or node!
                 child.print_tree()
 
-def build_product_tree():
-    # Setting the root!
+
+if __name__ == "__main__":
     root = TreeNode("Electronics")
 
     # adding first branch!
@@ -61,8 +61,4 @@ def build_product_tree():
     root.add_child(cellphone)
     root.add_child(tv)
 
-    return root
-
-if __name__ == "__main__":
-    root = build_product_tree()
-    root.print_tree()
+    print(root.print_tree())
