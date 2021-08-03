@@ -1,6 +1,7 @@
 # Binary Search - Works only for a sorted list!
 
 # Linear Search!
+# Time complexity: O(n)
 def linear_search(numbers_list,number_to_find):
     for i in range(len(numbers_list)):
         if numbers_list[i] == number_to_find:
@@ -8,6 +9,7 @@ def linear_search(numbers_list,number_to_find):
     
     return -1
 
+# Time complexity: O(log n)
 # Binary search without recursion!
 def binary_search(numbers_list,number_to_find):
     left_index = 0
@@ -28,6 +30,7 @@ def binary_search(numbers_list,number_to_find):
     
     return -1
 
+# Time complexity: O(log n)
 # Binary Search with recursion!
 def binary_search_recursive(numbers_list, number_to_find, left_index, right_index):
     if right_index < left_index:
