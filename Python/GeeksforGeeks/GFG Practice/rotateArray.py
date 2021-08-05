@@ -1,12 +1,14 @@
-for i in range(int(input())):
-    n,d = map(int, input().split())
-    arr = list(map(int,input().split()))
-    res = []
+# Question Link: https://practice.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1/?category[]=Arrays&category[]=Arrays&problemStatus=unsolved&difficulty[]=0&difficulty[]=1&page=1&query=category[]ArraysproblemStatusunsolveddifficulty[]0difficulty[]1page1category[]Arrays#
 
-    for i in range(d,n):
-        res.append(arr[i])
-    
-    for j in range(d):
-        res.append(arr[j])
+n,d = map(int,input().split())
+arr = list(map(int,input().split()))
+res = []
 
-    print(" ".join(str(e) for e in res))
+for i in range(d):
+    res.append(arr[i])
+
+for i in res:
+    if i in arr:
+        arr.remove(i)
+
+print(arr + res)
