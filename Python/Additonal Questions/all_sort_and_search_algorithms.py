@@ -11,7 +11,7 @@ def bubbleSort(arr):
         if swapped == False:
             break
 
-# Insertion sort logic!
+# Insertion sort!
 # O(n^2)
 def insertionSort(arr):
     for i in range(1,len(arr)):
