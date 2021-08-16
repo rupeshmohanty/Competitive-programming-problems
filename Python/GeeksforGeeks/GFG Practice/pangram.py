@@ -7,4 +7,7 @@ for i in s:
     if i.isalpha():
         res.add(i)
 
-print(len(res) == 26)
+if len(res) == 26:
+    print(1)
+else:
+    print(0)
