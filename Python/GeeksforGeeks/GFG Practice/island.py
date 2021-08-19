@@ -1,0 +1,6 @@
+S,N,M = map(int,input().split())
+if N < M:
+    print(-1)
+else:
+    extra = N // M
+    print(S - extra)
